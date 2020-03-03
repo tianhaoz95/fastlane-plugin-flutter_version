@@ -24,6 +24,8 @@ jobs:
           chmod 0600 ~/.gem/credentials
       - name: release package
         run: |
+          git config --global user.email "tianhaoz@umich.edu"
+          git config --global user.name "Tianhao Zhou"
           bundle install
           bundle exec rake install
           bundle exec rake release
