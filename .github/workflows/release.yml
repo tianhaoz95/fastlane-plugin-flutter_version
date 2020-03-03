@@ -18,8 +18,8 @@ jobs:
           RELEASE_TOKEN: ${{ secrets.RUBY_GEMS_TOKEN }}
         run: |
           rm -rf ~/.gem/credentials
-          touch ~/.gem/credentials
-          echo "---" >> ~/.gem/credentials
+          mkdir -p ~/.gem
+          echo "---" > ~/.gem/credentials
           echo ":rubygems_api_key: ${RELEASE_TOKEN}" >> ~/.gem/credentials
       - name: release package
         run: |
