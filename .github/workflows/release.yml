@@ -1,0 +1,28 @@
+on:
+  push:
+    branches: 
+      - "master"
+      - "release/*"
+jobs:
+  release-to-ruby-gems:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v1
+      - name: setup ruby environment
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+      - name: setup release credentials
+        env:
+          RELEASE_TOKEN: ${{ secrets.RUBY_GEMS_TOKEN }}
+        run: |
+          rm -rf ~/.gem/credentials
+          touch ~/.gem/credentials
+          echo "---" >> ~/.gem/credentials
+          echo ":rubygems_api_key: ${RELEASE_TOKEN}" >> ~/.gem/credentials
+      - name: release package
+        run: |
+          bundle install
+          bundle exec rake install
+          bundle exec rake release
