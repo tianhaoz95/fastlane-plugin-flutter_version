@@ -21,6 +21,7 @@ jobs:
           mkdir -p ~/.gem
           echo "---" > ~/.gem/credentials
           echo ":rubygems_api_key: ${RELEASE_TOKEN}" >> ~/.gem/credentials
+          chmod 0600 ~/.gem/credentials
       - name: release package
         run: |
           bundle install
