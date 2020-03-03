@@ -4,23 +4,19 @@
 
 ## Getting Started
 
-This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-flutter_version`, add it to your project by running:
+This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-flutter_version`, add it to your project by adding the following lines in `Gemfile`:
 
-```bash
-fastlane add_plugin flutter_version
+```Gemfile
+gem "fastlane-plugin-flutter_version", git: "https://github.com/tianhaoz95/fastlane-plugin-flutter-version"
 ```
 
 ## About flutter_version
 
 A plugin to retrieve versioning information for Flutter projects.
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
-
 ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
-
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
 
 ## Run tests for this plugin
 
@@ -31,6 +27,7 @@ rake
 ```
 
 To automatically fix many of the styling issues, use
+
 ```
 rubocop -a
 ```
