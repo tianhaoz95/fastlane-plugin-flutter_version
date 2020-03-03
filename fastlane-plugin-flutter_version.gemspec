@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'tianhaoz@umich.edu'
 
   spec.summary       = 'A plugin to retrieve versioning information for Flutter projects.'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-flutter_version"
+  spec.homepage      = "https://github.com/tianhaoz95/fastlane-plugin-flutter_version"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
