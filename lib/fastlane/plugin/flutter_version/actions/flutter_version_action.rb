@@ -1,4 +1,5 @@
 require 'fastlane/action'
+require 'yaml'
 require_relative '../helper/flutter_version_helper'
 
 module Fastlane
@@ -6,6 +7,19 @@ module Fastlane
     class FlutterVersionAction < Action
       def self.run(params)
         UI.message("The flutter_version plugin is working!")
+        pubspec_location = params[:pubspec_location]
+        pubspec = YAML.load_file(pubspec_location)
+        version = pubspec["version"]
+        UI.message("The full version is: ".concat(version))
+        if not version.include? "+"
+          raise "Verson code indicator (+) not foud in pubspec.yml"
+        end
+        version_sections = version.split("+")
+        version_name = version_sections[0]
+        version_code = version_sections[1]
+        UI.message("The version name: ".concat(version_name))
+        UI.message("The version code: ".concat(version_code))
+        return version_code
       end
 
       def self.description
@@ -17,29 +31,29 @@ module Fastlane
       end
 
       def self.return_value
-        # If your method provides a return value, you can describe here what it does
+        [
+          ['VERSION_CODE', 'The version code']
+        ]
       end
 
       def self.details
-        # Optional:
         "The plugin reads and parses pubspec.yml of a Flutter project and composes the versioning information into structured data to be consumed by various releasing automations."
       end
 
       def self.available_options
         [
-          # FastlaneCore::ConfigItem.new(key: :your_option,
-          #                         env_name: "FLUTTER_VERSION_YOUR_OPTION",
-          #                      description: "A description of your option",
-          #                         optional: false,
-          #                             type: String)
+          FastlaneCore::ConfigItem.new(
+            key: :pubspec_location,
+            env_name: "PUBSPEC_LOCATION",
+            description: "The location of pubspec.yml",
+            optional: true,
+            type: String,
+            default_value:"../pubspec.yaml"
+          ),
         ]
       end
 
       def self.is_supported?(platform)
-        # Adjust this if your plugin only works for a particular platform (iOS vs. Android, for example)
-        # See: https://docs.fastlane.tools/advanced/#control-configuration-by-lane-and-by-platform
-        #
-        # [:ios, :mac, :android].include?(platform)
         true
       end
     end
