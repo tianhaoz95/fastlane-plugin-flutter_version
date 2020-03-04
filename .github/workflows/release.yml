@@ -34,3 +34,4 @@ jobs:
           bundle install
           rake install
           gem push pkg/*.gem
+          gem push --key github --host https://rubygems.pkg.github.com/tianhaoz95 pkg/*.gem
