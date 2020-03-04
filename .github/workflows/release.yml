@@ -34,4 +34,4 @@ jobs:
         run: |
           bundle install
           rake install
-          rake release
+          rake release --trace
