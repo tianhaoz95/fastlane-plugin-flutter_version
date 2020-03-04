@@ -23,7 +23,11 @@ jobs:
           echo ":rubygems_api_key: ${RELEASE_TOKEN}" >> ~/.gem/credentials
           chmod 0600 ~/.gem/credentials
       - name: release package
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_GITHUB_TOKEN }}
         run: |
+          rm -rf ~/.git-credentials
+          echo "https://tianhaoz95:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
           git config --global user.email "jacksonzhou666@gmail.com"
           git config --global user.name "Tianhao Zhou"
           bundle install
