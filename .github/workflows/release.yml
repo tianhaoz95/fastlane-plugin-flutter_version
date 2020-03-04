@@ -30,7 +30,6 @@ jobs:
           git config --global user.name "Tianhao Zhou"
           git config --global credential.helper store
           echo "https://tianhaoz95:${GITHUB_TOKEN}@github.com" >> ~/.git-credentials
-          git remote add origin https://github.com/tianhaoz95/fastlane-plugin-flutter_version.git
       - name: release package
         run: |
           bundle install
