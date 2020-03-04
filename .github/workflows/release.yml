@@ -33,4 +33,4 @@ jobs:
           echo "machine github.com login tianhaoz95 password $GITHUB_TOKEN" > ~/.netrc
           bundle install
           rake install
-          rake release
+          gem push pkg/*.gem
