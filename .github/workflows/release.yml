@@ -26,7 +26,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_GITHUB_TOKEN }}
         run: |
-          git config --global user.email "jacksonzhou666@gmail.com"
+          git config --global user.email "tianhaoz@umich.edu"
           git config --global user.name "Tianhao Zhou"
           git config --global credential.helper store
           echo "https://tianhaoz95:${GITHUB_TOKEN}@github.com" >> ~/.git-credentials
