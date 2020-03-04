@@ -16,10 +16,12 @@ jobs:
       - name: setup release credentials
         env:
           RELEASE_TOKEN: ${{ secrets.RUBY_GEMS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_GITHUB_TOKEN }}
         run: |
           rm -rf ~/.gem/credentials
           mkdir -p ~/.gem
           echo "---" > ~/.gem/credentials
+          echo ":github: Bearer ${GITHUB_TOKEN}" >> ~/.gem/credentials
           echo ":rubygems_api_key: ${RELEASE_TOKEN}" >> ~/.gem/credentials
           chmod 0600 ~/.gem/credentials
       - name: setup git credentials
