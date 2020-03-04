@@ -33,5 +33,5 @@ jobs:
       - name: release package
         run: |
           bundle install
-          bundle exec rake install
-          bundle exec rake release
+          rake install
+          rake release
