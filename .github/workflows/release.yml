@@ -4,7 +4,6 @@ on:
       - "master"
       - "release/*"
     paths: 
-      - ".github/workflows/release.yml"
       - "lib/fastlane/plugin/flutter_version/version.rb"
 jobs:
   release-to-ruby-gems:
