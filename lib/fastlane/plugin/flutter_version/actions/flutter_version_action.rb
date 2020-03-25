@@ -12,7 +12,7 @@ module Fastlane
         version = pubspec["version"]
         UI.message("The full version is: ".concat(version))
         if not version.include? "+"
-          raise "Verson code indicator (+) not foud in pubspec.yml"
+          raise "Verson code indicator (+) not found in pubspec.yml"
         end
         version_sections = version.split("+")
         version_name = version_sections[0]
