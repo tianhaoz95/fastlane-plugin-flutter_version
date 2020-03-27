@@ -1,6 +1,6 @@
-require 'fastlane/action'
-require 'yaml'
-require_relative '../helper/flutter_version_helper'
+require "fastlane/action"
+require "yaml"
+require_relative "../helper/flutter_version_helper"
 
 module Fastlane
   module Actions
@@ -19,9 +19,10 @@ module Fastlane
         version_code = version_sections[1]
         UI.message("The version name: ".concat(version_name))
         UI.message("The version code: ".concat(version_code))
-        # The returned value should be a dictionary of all
-        # version informations instead of just a build number.
-        return version_code
+        return {
+                 "verison_code" => version_code,
+                 "version_name" => version_name,
+               }
       end
 
       def self.description
@@ -34,7 +35,7 @@ module Fastlane
 
       def self.return_value
         [
-          ['VERSION_CODE', 'The version code']
+          ["VERSION_CODE", "The version code"],
         ]
       end
 
@@ -50,7 +51,7 @@ module Fastlane
             description: "The location of pubspec.yml",
             optional: true,
             type: String,
-            default_value:"../pubspec.yaml"
+            default_value: "../pubspec.yaml",
           ),
         ]
       end
