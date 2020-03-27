@@ -23,4 +23,4 @@ jobs:
       - name: install dependencies
         run: bundle install
       - name: run tests
-        run: fastlane test
+        run: bundle exec fastlane test
