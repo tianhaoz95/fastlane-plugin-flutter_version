@@ -19,6 +19,8 @@ module Fastlane
         version_code = version_sections[1]
         UI.message("The version name: ".concat(version_name))
         UI.message("The version code: ".concat(version_code))
+        # The returned value should be a dictionary of all
+        # version informations instead of just a build number.
         return version_code
       end
 
