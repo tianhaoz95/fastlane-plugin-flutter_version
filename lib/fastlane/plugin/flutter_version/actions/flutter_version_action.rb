@@ -6,7 +6,6 @@ module Fastlane
   module Actions
     class FlutterVersionAction < Action
       def self.run(params)
-        UI.message("The flutter_version plugin is working!")
         pubspec_location = params[:pubspec_location]
         pubspec = YAML.load_file(pubspec_location)
         version = pubspec["version"]
