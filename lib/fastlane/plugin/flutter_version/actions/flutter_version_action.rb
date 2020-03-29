@@ -19,7 +19,7 @@ module Fastlane
         UI.message("The version name: ".concat(version_name))
         UI.message("The version code: ".concat(version_code))
         return {
-                 "verison_code" => version_code,
+                 "version_code" => version_code,
                  "version_name" => version_name,
                }
       end
