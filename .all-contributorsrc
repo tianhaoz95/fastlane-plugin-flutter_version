@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "shunkakinoki",
+      "name": "Shun Kakinoki",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/39187513?v=4",
+      "profile": "https://www.shunkakinoki.com/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "fastlane-plugin-flutter_version",
+  "projectOwner": "tianhaoz95",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
