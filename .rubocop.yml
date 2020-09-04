@@ -103,7 +103,7 @@ Layout/SpaceAroundOperators:
   Exclude:
   - "**/spec/actions_specs/xcodebuild_spec.rb"
 AllCops:
-  TargetRubyVersion: 2.8
+  TargetRubyVersion: 2.7
   Include:
   - "*/lib/assets/*Template"
   - "*/lib/assets/*TemplateAndroid"

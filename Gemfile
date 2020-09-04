@@ -1,5 +1,7 @@
 source("https://rubygems.org")
 
+gem "rake"
+
 gemspec
 
 gem "rufo", "0.12.0"
