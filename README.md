@@ -8,9 +8,15 @@
 
 flutter_version is a Fastlane plugin to retrieve version code from Flutter projects which can be used to release changlogs and other metadata to marketplaces.
 
-## Getting Started
+## Installation
 
 This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-flutter_version`, add it to your project by adding the following lines in `Gemfile`:
+
+### From GitHub registry
+
+Check out the instructions [here](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/packages/143774).
+
+### Directly from Github
 
 ```Gemfile
 gem "fastlane-plugin-flutter_version", git: "https://github.com/tianhaoz95/fastlane-plugin-flutter-version"
@@ -22,7 +28,25 @@ A plugin to retrieve versioning information for Flutter projects.
 
 ## Example
 
-Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
+The following example releases a Android app to Google Play Store without needing to manually specify the app version:
+
+```ruby
+desc "submit to internal track in Google Play Store"
+lane :internal do
+  gradle(task: 'bundle', build_type: 'Release')
+  upload_to_play_store(
+    track: 'internal',
+    version_code: flutter_version()["version_code"],
+    aab: '../build/app/outputs/bundle/release/app-release.aab',
+    skip_upload_screenshots: true,
+    skip_upload_images: true
+  )
+end
+```
+
+The line `flutter_version()` fetches the version information from the `pubspec.yaml` file from the Flutter project and parses the version information from the file. This is convenient for continuous integration because it saves the effort for developers to keep track of version information in multiple places.
+
+For more details, check out the [example project configuration](https://github.com/tianhaoz95/photochat/blob/master/photochatapp/android/fastlane/Fastfile).
 
 ## Run tests for this plugin
 
