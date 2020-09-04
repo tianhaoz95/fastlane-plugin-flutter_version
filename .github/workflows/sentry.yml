@@ -1,15 +1,11 @@
 name: sentry
 on:
   push:
-    branches: 
-      - "master"
-      - "dev/*"
-      - "fix/*"
-      - "refactor/*"
-      - "chore/*"
+    paths-ignore:
+      - '**.md'
   pull_request:
     branches:
-      - "master"
+      - 'master'
 jobs:
   unit-test:
     runs-on: ubuntu-latest
@@ -19,8 +15,10 @@ jobs:
       - name: setup ruby environment
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: '2.6'
+          ruby-version: '2.8'
       - name: install dependencies
         run: bundle install
+      - name: lint
+        run: rubocop -a
       - name: run tests
         run: bundle exec fastlane test
