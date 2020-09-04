@@ -9,21 +9,17 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 Style/SafeNavigation:
   Enabled: false
-Performance/RegexpMatch:
-  Enabled: false
-Performance/StringReplacement:
-  Enabled: false
 Style/NumericPredicate:
   Enabled: false
 Metrics/BlockLength:
   Enabled: false
 Metrics/ModuleLength:
   Enabled: false
-Style/VariableNumber:
+Naming/VariableNumber:
   Enabled: false
-Style/MethodMissing:
+Lint/MissingSuper:
   Enabled: false
-MultilineBlockChain:
+Style/MultilineBlockChain:
   Enabled: false
 Style/NumericLiteralPrefix:
   Enabled: false
@@ -31,26 +27,12 @@ Style/TernaryParentheses:
   Enabled: false
 Style/EmptyMethod:
   Enabled: false
-Style/BracesAroundHashParameters:
-  Enabled: false
 Lint/UselessAssignment:
   Exclude:
   - "**/spec/**/*"
-Require/MissingRequireStatement:
-  Exclude:
-  - "**/spec/**/*.rb"
-  - "**/spec_helper.rb"
-  - spaceship/lib/spaceship/babosa_fix.rb
-  - "**/Fastfile"
-  - "**/*.gemspec"
-  - rakelib/**/*
-  - "**/*.rake"
-  - "**/Rakefile"
-  - fastlane/**/*
-  - supply/**/*
-Layout/IndentHash:
+Layout/FirstHashElementIndentation:
   Enabled: false
-Layout/AlignHash:
+Layout/HashAlignment:
   Enabled: false
 Layout/DotPosition:
   Enabled: false
@@ -58,12 +40,12 @@ Style/DoubleNegation:
   Enabled: false
 Style/SymbolArray:
   Enabled: false
-Layout/IndentHeredoc:
+Layout/HeredocIndentation:
   Enabled: false
 Style/MixinGrouping:
   Exclude:
   - "**/spec/**/*"
-Lint/HandleExceptions:
+Lint/SuppressedException:
   Enabled: false
 Lint/UnusedBlockArgument:
   Enabled: false
@@ -94,7 +76,7 @@ Style/AndOr:
   EnforcedStyle: conditionals
 Metrics/ClassLength:
   Max: 320
-Metrics/LineLength:
+Layout/LineLength:
   Max: 370
 Metrics/ParameterLists:
   Max: 17
@@ -113,7 +95,7 @@ Lint/UnusedMethodArgument:
 Lint/ParenthesesAsGroupedExpression:
   Exclude:
   - "**/spec/**/*"
-Style/PredicateName:
+Naming/PredicateName:
   Enabled: false
 Style/PerlBackrefs:
   Enabled: false
@@ -121,7 +103,7 @@ Layout/SpaceAroundOperators:
   Exclude:
   - "**/spec/actions_specs/xcodebuild_spec.rb"
 AllCops:
-  TargetRubyVersion: 2.0
+  TargetRubyVersion: 2.7
   Include:
   - "*/lib/assets/*Template"
   - "*/lib/assets/*TemplateAndroid"
@@ -131,7 +113,7 @@ AllCops:
   - "**/lib/assets/DefaultFastfileTemplate"
   - "**/lib/assets/MatchfileTemplate"
   - "**/spec/fixtures/broken_files/broken_file.rb"
-Style/FileName:
+Naming/FileName:
   Exclude:
   - "**/Dangerfile"
   - "**/Brewfile"
@@ -152,16 +134,6 @@ Style/IfInsideElse:
   Enabled: false
 Style/CollectionMethods:
   Enabled: false
-CrossPlatform/ForkUsage:
-  Exclude:
-  - "**/plugins/template/**/*"
-Lint/IsStringUsage:
-  Include:
-  - cert/**/*
-  - gym/**/*
-  - match/**/*
-  - screengrab/**/*
-  - supply/**/*
 Style/MethodCallWithArgsParentheses:
   Enabled: true
   IgnoredMethods:
@@ -185,3 +157,91 @@ Style/MethodCallWithArgsParentheses:
   - context
   - before
   - after
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: true
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+Lint/DuplicateElsifCondition:
+  Enabled: true
+Lint/DuplicateRequire:
+  Enabled: true
+Lint/DuplicateRescueException:
+  Enabled: true
+Lint/EmptyConditionalBody:
+  Enabled: true
+Lint/EmptyFile:
+  Enabled: true
+Lint/FloatComparison:
+  Enabled: true
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+Lint/OutOfRangeRegexpRef:
+  Enabled: true
+Lint/RaiseException:
+  Enabled: true
+Lint/SelfAssignment:
+  Enabled: true
+Lint/StructNewOverride:
+  Enabled: true
+Lint/TopLevelReturnWithArgument:
+  Enabled: true
+Lint/TrailingCommaInAttributeDeclaration:
+  Enabled: true
+Lint/UnreachableLoop:
+  Enabled: true
+Lint/UselessMethodDefinition:
+  Enabled: true
+Style/AccessorGrouping:
+  Enabled: true
+Style/ArrayCoercion:
+  Enabled: true
+Style/BisectedAttrAccessor:
+  Enabled: true
+Style/CaseLikeIf:
+  Enabled: true
+Style/CombinableLoops:
+  Enabled: true
+Style/ExplicitBlockArgument:
+  Enabled: true
+Style/ExponentialNotation:
+  Enabled: true
+Style/GlobalStdStream:
+  Enabled: true
+Style/HashAsLastArrayItem:
+  Enabled: true
+Style/HashEachMethods:
+  Enabled: true
+Style/HashLikeCase:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
+Style/KeywordParametersOrder:
+  Enabled: true
+Style/OptionalBooleanParameter:
+  Enabled: true
+Style/RedundantAssignment:
+  Enabled: true
+Style/RedundantFetchBlock:
+  Enabled: true
+Style/RedundantFileExtensionInRequire:
+  Enabled: true
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+Style/RedundantRegexpEscape:
+  Enabled: true
+Style/RedundantSelfAssignment:
+  Enabled: true
+Style/SingleArgumentDig:
+  Enabled: true
+Style/SlicingWithRange:
+  Enabled: true
+Style/SoleNestedConditional:
+  Enabled: true
+Style/StringConcatenation:
+  Enabled: true

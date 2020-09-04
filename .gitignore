@@ -1,7 +1,9 @@
 *.gem
 Gemfile.lock
+/vendor
+/.bundle
 
-## Documentation cache and generated files:
+# Documentation cache and generated files:
 /.yardoc/
 /_yardoc/
 /doc/
@@ -10,3 +12,10 @@ fastlane/README.md
 fastlane/report.xml
 coverage
 test-results
+
+# Example generated files:
+/example/.dart_tool
+/example/.flutter-plugins
+/example/.flutter-plugins-dependencies
+/example/.packages
+/example/pubspec.lock

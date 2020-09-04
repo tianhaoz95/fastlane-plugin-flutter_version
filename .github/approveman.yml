@@ -1,0 +1,6 @@
+ownership_rules:
+  directory_matching_rules:
+    - name: personal projects in experimental
+      path: playground/{{username}}/**/*
+    - name: personal documentation
+      path: docs/personal/{{username}}/**/*
