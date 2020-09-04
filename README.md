@@ -12,9 +12,13 @@ flutter_version is a Fastlane plugin to retrieve version code from Flutter proje
 
 This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-flutter_version`, add it to your project by adding the following lines in `Gemfile`:
 
-### From GitHub registry
+### From GitHub registry (Recommended)
 
 Check out the instructions [here](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/packages/143774).
+
+### From gem registry
+
+Check out the instructions [here](https://rubygems.org/gems/fastlane-plugin-flutter_version).
 
 ### Directly from Github
 
