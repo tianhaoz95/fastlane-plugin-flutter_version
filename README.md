@@ -5,6 +5,7 @@
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-flutter_version)
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/tianhaoz95/fastlane-plugin-flutter_version) 
+[![codecov](https://codecov.io/gh/tianhaoz95/fastlane-plugin-flutter_version/branch/master/graph/badge.svg)](https://codecov.io/gh/tianhaoz95/fastlane-plugin-flutter_version)
 
 flutter_version is a Fastlane plugin to retrieve version code from Flutter projects which can be used to release changlogs and other metadata to marketplaces.
 
