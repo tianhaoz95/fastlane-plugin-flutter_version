@@ -1,0 +1,3152 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Rubocop",
+          "rules": [
+            {
+              "id": "Style/FrozenStringLiteralComment",
+              "name": "Style/FrozenStringLiteralComment",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Add the frozen_string_literal comment to the top of files to help transition to frozen string literals by default.",
+                "tags": [
+                  "style"
+                ]
+              },
+              "shortDescription": {
+                "text": "Add the frozen_string_literal comment to the top of files to help transition to frozen string literals by default."
+              },
+              "fullDescription": {
+                "text": "Add the frozen_string_literal comment to the top of files to help transition to frozen string literals by default."
+              }
+            },
+            {
+              "id": "Style/StringLiterals",
+              "name": "Style/StringLiterals",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Checks if uses of quotes match the configured preference.",
+                "tags": [
+                  "style"
+                ]
+              },
+              "shortDescription": {
+                "text": "Checks if uses of quotes match the configured preference."
+              },
+              "fullDescription": {
+                "text": "Checks if uses of quotes match the configured preference."
+              }
+            },
+            {
+              "id": "Layout/LineLength",
+              "name": "Layout/LineLength",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Limit lines to 80 characters.",
+                "tags": [
+                  "layout"
+                ]
+              },
+              "shortDescription": {
+                "text": "Limit lines to 80 characters."
+              },
+              "fullDescription": {
+                "text": "Limit lines to 80 characters."
+              }
+            },
+            {
+              "id": "Style/PercentLiteralDelimiters",
+              "name": "Style/PercentLiteralDelimiters",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Use `%`-literal delimiters consistently.",
+                "tags": [
+                  "style"
+                ]
+              },
+              "shortDescription": {
+                "text": "Use `%`-literal delimiters consistently."
+              },
+              "fullDescription": {
+                "text": "Use `%`-literal delimiters consistently."
+              }
+            },
+            {
+              "id": "Style/Documentation",
+              "name": "Style/Documentation",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Document classes and non-namespace modules.",
+                "tags": [
+                  "style"
+                ]
+              },
+              "shortDescription": {
+                "text": "Document classes and non-namespace modules."
+              },
+              "fullDescription": {
+                "text": "Document classes and non-namespace modules."
+              }
+            },
+            {
+              "id": "Metrics/AbcSize",
+              "name": "Metrics/AbcSize",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "A calculated magnitude based on number of assignments, branches, and conditions.",
+                "tags": [
+                  "metrics"
+                ]
+              },
+              "shortDescription": {
+                "text": "A calculated magnitude based on number of assignments, branches, and conditions."
+              },
+              "fullDescription": {
+                "text": "A calculated magnitude based on number of assignments, branches, and conditions."
+              }
+            },
+            {
+              "id": "Metrics/MethodLength",
+              "name": "Metrics/MethodLength",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Avoid methods longer than 10 lines of code.",
+                "tags": [
+                  "metrics"
+                ]
+              },
+              "shortDescription": {
+                "text": "Avoid methods longer than 10 lines of code."
+              },
+              "fullDescription": {
+                "text": "Avoid methods longer than 10 lines of code."
+              }
+            },
+            {
+              "id": "Style/RedundantReturn",
+              "name": "Style/RedundantReturn",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Don't use return where it's not required.",
+                "tags": [
+                  "style"
+                ]
+              },
+              "shortDescription": {
+                "text": "Don't use return where it's not required."
+              },
+              "fullDescription": {
+                "text": "Don't use return where it's not required."
+              }
+            },
+            {
+              "id": "Layout/FirstHashElementIndentation",
+              "name": "Layout/FirstHashElementIndentation",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Checks the indentation of the first key in a hash literal.",
+                "tags": [
+                  "layout"
+                ]
+              },
+              "shortDescription": {
+                "text": "Checks the indentation of the first key in a hash literal."
+              },
+              "fullDescription": {
+                "text": "Checks the indentation of the first key in a hash literal."
+              }
+            },
+            {
+              "id": "Naming/PredicateName",
+              "name": "Naming/PredicateName",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Check the names of predicate methods.",
+                "tags": [
+                  "naming"
+                ]
+              },
+              "shortDescription": {
+                "text": "Check the names of predicate methods."
+              },
+              "fullDescription": {
+                "text": "Check the names of predicate methods."
+              }
+            },
+            {
+              "id": "Lint/UnusedMethodArgument",
+              "name": "Lint/UnusedMethodArgument",
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Checks for unused method arguments.",
+                "tags": [
+                  "lint"
+                ]
+              },
+              "shortDescription": {
+                "text": "Checks for unused method arguments."
+              },
+              "fullDescription": {
+                "text": "Checks for unused method arguments."
+              }
+            },
+            {
+              "id": "Style/MutableConstant",
+              "name": "Style/MutableConstant",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Do not assign mutable objects to constants.",
+                "tags": [
+                  "style"
+                ]
+              },
+              "shortDescription": {
+                "text": "Do not assign mutable objects to constants."
+              },
+              "fullDescription": {
+                "text": "Do not assign mutable objects to constants."
+              }
+            },
+            {
+              "id": "Metrics/BlockLength",
+              "name": "Metrics/BlockLength",
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "precision": "very-high",
+                "description": "Avoid long blocks with many lines.",
+                "tags": [
+                  "metrics"
+                ]
+              },
+              "shortDescription": {
+                "text": "Avoid long blocks with many lines."
+              },
+              "fullDescription": {
+                "text": "Avoid long blocks with many lines."
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "Style/FrozenStringLiteralComment",
+          "ruleIndex": 0,
+          "message": {
+            "text": "Style/FrozenStringLiteralComment: Missing frozen string literal comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 9,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 15,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 16,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 18,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Layout/LineLength",
+          "ruleIndex": 2,
+          "message": {
+            "text": "Layout/LineLength: Line is too long. [84/80]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 81,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 19,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 18,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 20,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/PercentLiteralDelimiters",
+          "ruleIndex": 3,
+          "message": {
+            "text": "Style/PercentLiteralDelimiters: `%w`-literals should be delimited by `[` and `]`."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 34,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 25,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 35,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 35,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 47,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 35,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 35,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 35,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 35,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 35,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 35,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane-plugin-flutter_version.gemspec",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 35,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/FrozenStringLiteralComment",
+          "ruleIndex": 0,
+          "message": {
+            "text": "Style/FrozenStringLiteralComment: Missing frozen string literal comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane/Fastfile",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane/Fastfile",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 23,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane/Fastfile",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 31,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane/Fastfile",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 26,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane/Fastfile",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 7,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane/Fastfile",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 17,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane/Fastfile",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 31,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane/Fastfile",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 27,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane/Fastfile",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 7,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastlane/Fastfile",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 17,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/FrozenStringLiteralComment",
+          "ruleIndex": 0,
+          "message": {
+            "text": "Style/FrozenStringLiteralComment: Missing frozen string literal comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 9,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/Documentation",
+          "ruleIndex": 4,
+          "message": {
+            "text": "Style/Documentation: Missing top-level module documentation comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 3,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 28,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/FrozenStringLiteralComment",
+          "ruleIndex": 0,
+          "message": {
+            "text": "Style/FrozenStringLiteralComment: Missing frozen string literal comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 9,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 9,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/Documentation",
+          "ruleIndex": 4,
+          "message": {
+            "text": "Style/Documentation: Missing top-level class documentation comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 5,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Metrics/AbcSize",
+          "ruleIndex": 5,
+          "message": {
+            "text": "Metrics/AbcSize: Assignment Branch Condition size for run is too high. [<6, 14, 1> 15.26/15]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 7,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Metrics/MethodLength",
+          "ruleIndex": 6,
+          "message": {
+            "text": "Metrics/MethodLength: Method has too many lines. [16/10]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 7,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 27,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 20,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 33,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 17,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 42,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 20,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 20,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/RedundantReturn",
+          "ruleIndex": 7,
+          "message": {
+            "text": "Style/RedundantReturn: Redundant `return` detected."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 9,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Layout/FirstHashElementIndentation",
+          "ruleIndex": 8,
+          "message": {
+            "text": "Layout/FirstHashElementIndentation: Use 2 spaces for indentation in a hash, relative to the start of the line where the left curly brace is."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 18,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 18,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 18,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Layout/FirstHashElementIndentation",
+          "ruleIndex": 8,
+          "message": {
+            "text": "Layout/FirstHashElementIndentation: Indent the right brace the same as the start of the line where the left brace is."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 16,
+                  "endColumn": 16
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 9,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 10,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 12,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 28,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 12,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 28,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 23,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 26,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 28,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Naming/PredicateName",
+          "ruleIndex": 9,
+          "message": {
+            "text": "Naming/PredicateName: Rename `is_supported?` to `supported?`."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 16,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Lint/UnusedMethodArgument",
+          "ruleIndex": 10,
+          "message": {
+            "text": "Lint/UnusedMethodArgument: Unused method argument - `platform`. If it's necessary, use `_` or `_platform` as an argument name to indicate that it won't be used. You can also write as `is_supported?(*)` if you want the method to accept any arguments but don't care about them."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 30,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/FrozenStringLiteralComment",
+          "ruleIndex": 0,
+          "message": {
+            "text": "Style/FrozenStringLiteralComment: Missing frozen string literal comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/helper/flutter_version_helper.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/helper/flutter_version_helper.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 9,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/Documentation",
+          "ruleIndex": 4,
+          "message": {
+            "text": "Style/Documentation: Missing top-level module documentation comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/helper/flutter_version_helper.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endColumn": 6
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/helper/flutter_version_helper.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 56,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/Documentation",
+          "ruleIndex": 4,
+          "message": {
+            "text": "Style/Documentation: Missing top-level class documentation comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/helper/flutter_version_helper.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 5,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/helper/flutter_version_helper.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 20,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/FrozenStringLiteralComment",
+          "ruleIndex": 0,
+          "message": {
+            "text": "Style/FrozenStringLiteralComment: Missing frozen string literal comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/version.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/MutableConstant",
+          "ruleIndex": 11,
+          "message": {
+            "text": "Style/MutableConstant: Freeze mutable objects assigned to constants."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/version.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 15,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/fastlane/plugin/flutter_version/version.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 15,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/FrozenStringLiteralComment",
+          "ruleIndex": 0,
+          "message": {
+            "text": "Style/FrozenStringLiteralComment: Missing frozen string literal comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 15,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Metrics/BlockLength",
+          "ruleIndex": 12,
+          "message": {
+            "text": "Metrics/BlockLength: Block has too many lines. [68/25]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 1,
+                  "endColumn": 3
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Metrics/BlockLength",
+          "ruleIndex": 12,
+          "message": {
+            "text": "Metrics/BlockLength: Block has too many lines. [66/25]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 3,
+                  "endColumn": 5
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 12,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 8,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 15,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 15,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 15,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 27,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 8,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 29,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 11,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 18,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 8,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 29,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 11,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 18,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 8,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 23,
+                  "endColumn": 88
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Layout/LineLength",
+          "ruleIndex": 2,
+          "message": {
+            "text": "Layout/LineLength: Line is too long. [89/80]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 81,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 8,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 23,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 8,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 28,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 8,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 10,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 26,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 10,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 26,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 8,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 29,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Layout/LineLength",
+          "ruleIndex": 2,
+          "message": {
+            "text": "Layout/LineLength: Line is too long. [82/80]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 81,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 9,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/flutter_version_action_spec.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 8,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/FrozenStringLiteralComment",
+          "ruleIndex": 0,
+          "message": {
+            "text": "Style/FrozenStringLiteralComment: Missing frozen string literal comment."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/spec_helper.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/spec_helper.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 9,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/spec_helper.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 9,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Style/StringLiterals",
+          "ruleIndex": 1,
+          "message": {
+            "text": "Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/spec_helper.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 9,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        },
+        {
+          "ruleId": "Layout/LineLength",
+          "ruleIndex": 2,
+          "message": {
+            "text": "Layout/LineLength: Line is too long. [101/80]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "spec/spec_helper.rb",
+                  "uriBaseId": "%SRCROOT%",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 81,
+                  "endColumn": 101
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+          }
+        }
+      ]
+    }
+  ]
+}
