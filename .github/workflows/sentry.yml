@@ -22,3 +22,8 @@ jobs:
         run: bundle exec rake
       - name: run tests
         run: bundle exec fastlane test
+      - uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: coverage/.last_run.json, coverage/.resultset.json
+

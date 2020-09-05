@@ -1,6 +1,6 @@
 lane :test do
   version_info = flutter_version(
-    pubspec_location: "./example/pubspec.yaml",
+    pubspec_location: "./example/pubspec.yaml"
   )
   puts version_info
   # Tests if the version code retrieved from the pubspec.yaml matches
