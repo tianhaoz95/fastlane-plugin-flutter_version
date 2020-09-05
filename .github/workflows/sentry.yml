@@ -7,7 +7,7 @@ on:
     branches:
       - 'master'
 jobs:
-  unit-test:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
@@ -21,9 +21,6 @@ jobs:
       - name: sanity checks
         run: bundle exec rake
       - name: run tests
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: bundle exec fastlane test
-      - uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: coverage/.last_run.json, coverage/.resultset.json
-
