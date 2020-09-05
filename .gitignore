@@ -14,8 +14,8 @@ coverage
 test-results
 
 # Example generated files:
-/example/.dart_tool
-/example/.flutter-plugins
-/example/.flutter-plugins-dependencies
-/example/.packages
-/example/pubspec.lock
+.dart_tool
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock

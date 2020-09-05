@@ -10,9 +10,10 @@ module Fastlane
         pubspec = YAML.load_file(pubspec_location)
         version = pubspec["version"]
         UI.message("The full version is: ".concat(version))
-        if not version.include? "+"
+        unless version.include?("+")
           raise "Verson code indicator (+) not found in pubspec.yml"
         end
+
         version_sections = version.split("+")
         version_name = version_sections[0]
         version_code = version_sections[1]
@@ -20,7 +21,7 @@ module Fastlane
         UI.message("The version code: ".concat(version_code))
         return {
                  "version_code" => version_code,
-                 "version_name" => version_name,
+                 "version_name" => version_name
                }
       end
 
@@ -35,11 +36,15 @@ module Fastlane
       def self.return_value
         [
           ["VERSION_CODE", "The version code"],
+          ["VERSION_NAME", "The verison name"]
         ]
       end
 
       def self.details
-        "The plugin reads and parses pubspec.yml of a Flutter project and composes the versioning information into structured data to be consumed by various releasing automations."
+        "The plugin reads and parses pubspec.yml of a Flutter
+        project and composes the versioning information into
+        structured data to be consumed by various releasing
+        automations."
       end
 
       def self.available_options
@@ -50,8 +55,8 @@ module Fastlane
             description: "The location of pubspec.yml",
             optional: true,
             type: String,
-            default_value: "../pubspec.yaml",
-          ),
+            default_value: "../pubspec.yaml"
+          )
         ]
       end
 
