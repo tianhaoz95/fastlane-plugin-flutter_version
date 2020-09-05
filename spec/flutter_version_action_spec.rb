@@ -64,5 +64,10 @@ describe Fastlane::Actions::FlutterVersionAction do
         "Verson code indicator (+) not found in pubspec.yml"
       )
     end
+    it "list options" do
+      expect(
+        Fastlane::Actions::FlutterVersionAction.available_options.length
+      ).to eq(1)
+    end
   end
 end
