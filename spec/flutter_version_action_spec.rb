@@ -1,3 +1,9 @@
+require 'simplecov'
+SimpleCov.start
+
+require 'codecov'
+SimpleCov.formatter = SimpleCov::Formatter::Codecov
+
 # For a list of matchers, see:
 # https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
 
