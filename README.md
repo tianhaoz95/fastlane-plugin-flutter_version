@@ -53,10 +53,10 @@ The line `flutter_version()` fetches the version information from the `pubspec.y
 
 For more details, check out the [example project configuration](https://github.com/tianhaoz95/photochat/blob/master/photochatapp/android/fastlane/Fastfile).
 
-The following example releases a iOS app to TestFlight without needing to manually specify the app version or build number:
+The following example releases an iOS app to TestFlight without needing to manually specify the app version or build number:
 
 ```ruby
-desc "submit to internal track in Google Play Store"
+desc "submit to TestFlight"
 lane :internal do
   # https://docs.fastlane.tools/actions/increment_version_number/
   increment_version_number(
