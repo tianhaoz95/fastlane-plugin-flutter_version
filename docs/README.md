@@ -1,6 +1,6 @@
 # flutter_version plugin
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-flutter_version)
@@ -33,6 +33,8 @@ A plugin to retrieve versioning information for Flutter projects.
 
 ## Example
 
+### Android
+
 The following example releases a Android app to Google Play Store without needing to manually specify the app version:
 
 ```ruby
@@ -52,6 +54,28 @@ end
 The line `flutter_version()` fetches the version information from the `pubspec.yaml` file from the Flutter project and parses the version information from the file. This is convenient for continuous integration because it saves the effort for developers to keep track of version information in multiple places.
 
 For more details, check out the [example project configuration](https://github.com/tianhaoz95/photochat/blob/master/photochatapp/android/fastlane/Fastfile).
+
+### iOS
+
+The following example releases an iOS app to TestFlight without needing to manually specify the app version or build number:
+
+```ruby
+desc "submit to TestFlight"
+lane :internal do
+  # https://docs.fastlane.tools/actions/increment_version_number/
+  increment_version_number(
+    xcodeproj: "Runner.xcodeproj",
+    version_number: flutter_version()["version_name"] # Set a specific version number
+  )
+    # https://docs.fastlane.tools/actions/increment_build_number/
+  increment_build_number(
+    xcodeproj: "Runner.xcodeproj",
+    build_number: flutter_version()["version_code"] # Set a specific build number
+  )
+  build_app(workspace: "Runner.xcworkspace", export_method: "app-store")
+  upload_to_testflight
+end
+```
 
 ## For developers
 
@@ -108,6 +132,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://www.shunkakinoki.com/"><img src="https://avatars0.githubusercontent.com/u/39187513?v=4" width="100px;" alt=""/><br /><sub><b>Shun Kakinoki</b></sub></a><br /><a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=shunkakinoki" title="Code">💻</a></td>
     <td align="center"><a href="http://tianhaoz.com"><img src="https://avatars3.githubusercontent.com/u/16887772?v=4" width="100px;" alt=""/><br /><sub><b>Tianhao Zhou</b></sub></a><br /><a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=tianhaoz95" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/davidbrenner"><img src="https://avatars3.githubusercontent.com/u/236870?v=4" width="100px;" alt=""/><br /><sub><b>davidbrenner</b></sub></a><br /><a href="#ideas-davidbrenner" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=davidbrenner" title="Documentation">📖</a></td>
   </tr>
 </table>
 

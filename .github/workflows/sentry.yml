@@ -1,11 +1,5 @@
 name: sentry
-on:
-  push:
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    branches:
-      - 'master'
+on: push
 jobs:
   test:
     runs-on: ubuntu-latest

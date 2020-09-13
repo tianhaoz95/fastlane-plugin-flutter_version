@@ -1,0 +1,10 @@
+name: sentry
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: check README content sync
+        run: ./scripts/check_sync.sh
