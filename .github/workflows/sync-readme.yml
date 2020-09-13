@@ -1,4 +1,4 @@
-name: readme sync
+name: Readme Sync
 on: push
 jobs:
   readme-sync-test:

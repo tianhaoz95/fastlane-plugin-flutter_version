@@ -1,4 +1,4 @@
-name: sentry
+name: Sentry
 on: push
 jobs:
   spec-test:
