@@ -1,4 +1,4 @@
-name: sentry
+name: readme sync
 on: push
 jobs:
   test:
