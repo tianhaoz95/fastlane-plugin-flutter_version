@@ -1,7 +1,7 @@
 name: sentry
 on: push
 jobs:
-  test:
+  spec-test:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code

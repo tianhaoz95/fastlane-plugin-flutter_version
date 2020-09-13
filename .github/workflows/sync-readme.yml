@@ -1,7 +1,7 @@
 name: readme sync
 on: push
 jobs:
-  test:
+  readme-sync-test:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
