@@ -33,6 +33,8 @@ A plugin to retrieve versioning information for Flutter projects.
 
 ## Example
 
+### Android
+
 The following example releases a Android app to Google Play Store without needing to manually specify the app version:
 
 ```ruby
@@ -52,6 +54,8 @@ end
 The line `flutter_version()` fetches the version information from the `pubspec.yaml` file from the Flutter project and parses the version information from the file. This is convenient for continuous integration because it saves the effort for developers to keep track of version information in multiple places.
 
 For more details, check out the [example project configuration](https://github.com/tianhaoz95/photochat/blob/master/photochatapp/android/fastlane/Fastfile).
+
+### iOS
 
 The following example releases an iOS app to TestFlight without needing to manually specify the app version or build number:
 

@@ -1,13 +1,7 @@
-name: sentry
-on:
-  push:
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    branches:
-      - 'master'
+name: Sentry
+on: push
 jobs:
-  test:
+  spec-test:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
