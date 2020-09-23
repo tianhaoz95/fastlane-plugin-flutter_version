@@ -1,4 +1,4 @@
-# flutter_version plugin
+# flutter_version (Fastlane plugin)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -13,9 +13,23 @@ flutter_version is a Fastlane plugin to retrieve version code from Flutter proje
 
 This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-flutter_version`, add it to your project by adding the following lines in `Gemfile`:
 
-### From GitHub registry (Recommended)
+### From GitHub registry (recommended)
 
-Check out the instructions [here](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/packages/143774).
+Install from the command line:
+
+```bash
+gem install fastlane-plugin-flutter_version --version "1.0.0" --source "https://rubygems.pkg.github.com/tianhaoz95"
+```
+
+Install via Gemfile:
+
+```bash
+source "https://rubygems.pkg.github.com/tianhaoz95" do
+  gem "fastlane-plugin-flutter_version", "1.0.0"
+end
+```
+
+Check out the instructions in [GitHub Registry](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/packages/143774).
 
 ### From gem registry
 
@@ -27,13 +41,9 @@ Check out the instructions [here](https://rubygems.org/gems/fastlane-plugin-flut
 gem "fastlane-plugin-flutter_version", git: "https://github.com/tianhaoz95/fastlane-plugin-flutter-version"
 ```
 
-## About flutter_version
+## Usage
 
-A plugin to retrieve versioning information for Flutter projects.
-
-## Example
-
-### Android
+### Android example
 
 The following example releases a Android app to Google Play Store without needing to manually specify the app version:
 
@@ -55,7 +65,7 @@ The line `flutter_version()` fetches the version information from the `pubspec.y
 
 For more details, check out the [example project configuration](https://github.com/tianhaoz95/photochat/blob/master/photochatapp/android/fastlane/Fastfile).
 
-### iOS
+### iOS example
 
 The following example releases an iOS app to TestFlight without needing to manually specify the app version or build number:
 
@@ -75,34 +85,6 @@ lane :internal do
   build_app(workspace: "Runner.xcworkspace", export_method: "app-store")
   upload_to_testflight
 end
-```
-
-## For developers
-
-### Install dependencies
-
-```bash
-bundle install
-```
-
-If the command above complains about permission issue, use:
-
-```bash
-sudo bundle install --path ./vendor/bundle
-```
-
-### Run tests for this plugin
-
-To run both the tests, and code style validation, run
-
-```bash
-bunlde exec rake
-```
-
-To automatically fix many of the styling issues, use
-
-```bash
-bundle exec rake rubocop:auto_correct -a
 ```
 
 ## Issues and feedback

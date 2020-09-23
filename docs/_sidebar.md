@@ -1,4 +1,4 @@
-* [Home](/)
-    * [Installation](/#installation)
-    * [Example](/#example)
-    * [Develop](/#for-developers)
+* [Getting Started](/)
+* [For Developers](/development)
+* [Security](/security)
+* [Code of Conduct](/code)
