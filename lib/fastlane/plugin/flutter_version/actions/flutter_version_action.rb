@@ -19,7 +19,7 @@ module Fastlane
         # rubocop:enable Style/RescueStandardError
         version = pubspec['version']
         UI.message('The full version is: '.dup.concat(version))
-        unless version.include?('+')
+        if not version.include?('+')
           raise 'Verson code indicator (+) not found in pubspec.yml'
         end
 
