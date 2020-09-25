@@ -1,7 +1,6 @@
 source("https://rubygems.org")
 
 gem "rake"
-gem "code-scanning-rubocop", "0.3.0"
 gem 'codecov'
 
 gemspec
