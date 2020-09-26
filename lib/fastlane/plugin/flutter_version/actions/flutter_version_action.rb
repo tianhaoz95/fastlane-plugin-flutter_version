@@ -19,9 +19,7 @@ module Fastlane
         # rubocop:enable Style/RescueStandardError
         version = pubspec['version']
         UI.message('The full version is: '.dup.concat(version))
-        if !version.include?('+')
-          raise 'Verson code indicator (+) not found in pubspec.yml'
-        end
+        unless version.include?('+') raise 'Verson code indicator (+) not found in pubspec.yml'
 
         version_sections = version.split('+')
         version_name = version_sections[0]
