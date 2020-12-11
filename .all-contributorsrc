@@ -1,6 +1,7 @@
 {
   "files": [
-    "README.md"
+    "README.md",
+    "docs/README.md"
   ],
   "imageSize": 100,
   "commit": false,
@@ -31,6 +32,15 @@
       "contributions": [
         "ideas",
         "doc"
+      ]
+    },
+    {
+      "login": "danielgomezrico",
+      "name": "Daniel Gomez",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/76348?v=4",
+      "profile": "http://lahaus.com",
+      "contributions": [
+        "ideas"
       ]
     }
   ],
