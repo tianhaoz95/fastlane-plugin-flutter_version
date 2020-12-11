@@ -78,7 +78,7 @@ module Fastlane
             description: 'If the version code should be omitted for projects that do not use a version code',
             optional: true,
             type: Boolean,
-            default_value: true
+            default_value: false
           )
         ]
       end
