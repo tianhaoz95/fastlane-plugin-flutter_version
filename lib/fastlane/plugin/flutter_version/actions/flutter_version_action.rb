@@ -10,6 +10,7 @@ module Fastlane
     class FlutterVersionAction < Action
       def self.run(params)
         pubspec_location = params[:pubspec_location]
+        should_omit_version_code = params[:should_omit_version_code]
         begin
           pubspec = YAML.load_file(pubspec_location)
         # rubocop:disable Style/RescueStandardError
@@ -20,7 +21,13 @@ module Fastlane
         version = pubspec['version']
         UI.message('The full version is: '.dup.concat(version))
         # TODO(tianhaoz95): add an option to suppress for projects that do not need a version code.
-        raise 'Verson code indicator (+) not found in pubspec.yml' unless version.include?('+')
+        has_version_code_pattern = version.include?('+')
+        if should_omit_version_code && has_version_code_pattern
+          raise 'Version code omitted but verson code indicator (+) found in pubspec.yml'
+        end
+        if !should_omit_version_code && !has_version_code_pattern
+          raise 'Verson code indicator (+) not found in pubspec.yml'
+        end
 
         version_sections = version.split('+')
         version_name = version_sections[0]
@@ -64,6 +71,14 @@ module Fastlane
             optional: true,
             type: String,
             default_value: '../pubspec.yaml'
+          ),
+          FastlaneCore::ConfigItem.new(
+            key: :should_omit_version_code,
+            env_name: 'SHOULD_OMIT_VERSION_CODE',
+            description: 'If the version code should be omitted for projects that do not use a version code',
+            optional: true,
+            type: Boolean,
+            default_value: true
           )
         ]
       end

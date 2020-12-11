@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 
-require 'simplecov'
-SimpleCov.start do
-  track_files 'lib/**/*.rb'
-end
+if ENV['CI'] == 'true'
+  require 'simplecov'
+  SimpleCov.start do
+    track_files 'lib/**/*.rb'
+  end
 
-require 'codecov'
-SimpleCov.formatter = SimpleCov::Formatter::Codecov
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
 
 # For a list of matchers, see:
 # https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -95,7 +97,7 @@ describe Fastlane::Actions::FlutterVersionAction do
     it 'list options' do
       expect(
         Fastlane::Actions::FlutterVersionAction.available_options.length
-      ).to eq(1)
+      ).to eq(2)
     end
   end
 end
