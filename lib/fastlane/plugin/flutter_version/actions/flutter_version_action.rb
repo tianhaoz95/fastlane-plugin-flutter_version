@@ -29,7 +29,11 @@ module Fastlane
           raise 'Verson code indicator (+) not found in pubspec.yml'
         end
 
-        version_sections = version.split('+')
+        version_sections = if should_omit_version_code
+                             [version, 'NOT_FOUND']
+                           else
+                             version.split('+')
+                           end
         version_name = version_sections[0]
         version_code = version_sections[1]
         UI.message('The version name: '.dup.concat(version_name))

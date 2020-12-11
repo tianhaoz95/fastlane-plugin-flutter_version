@@ -1,0 +1,54 @@
+name: no_version_code
+description: This is a config that does not include version code.
+
+# Note that compared with 1.20.2+x this version does not include
+# version code. This is not ideal for Android applications especially
+# when there is a plan to release to Google Play Store, but it is
+# still valid for iOS applications or web applcations.
+version: 1.20.2
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  image_picker: ^0.6.3+1
+  image_gallery_saver: ^1.2.2
+  esys_flutter_share: ^1.0.2
+  image: 
+  permission_handler: ^4.4.0+hotfix.2
+  encrypt: ^4.0.0
+  provider: ^4.0.4
+  http: ^0.12.0+4
+  intl: ^0.16.0
+  device_info: ^0.4.2+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  test: any
+  mockito: ^4.1.1
+  path_provider: ^1.6.0
+  intl_translation: ^0.17.9
+
+flutter:
+  assets:
+    - "assets/photo_placeholder.png"
+    - "assets/loading_deer.gif"
+    - "assets/loading_donkey.gif"
+    - "assets/loading_husky.gif"
+    - "assets/message_logo.png"
+    - "assets/rabbits_clapping.gif"
+    - "assets/bear_bye.gif"
+    - "assets/in_love_corgi_long.gif"
+    - "assets/programming_corgi.gif"
+    - "assets/test_images/corgi.png"
+    - "assets/test_images/encrypted_corgi.png"
+
+  uses-material-design: true
