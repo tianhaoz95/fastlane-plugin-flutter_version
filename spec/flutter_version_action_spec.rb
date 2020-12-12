@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 
-require 'simplecov'
-SimpleCov.start do
-  track_files 'lib/**/*.rb'
-end
+if ENV['CI'] == 'true'
+  require 'simplecov'
+  SimpleCov.start do
+    track_files 'lib/**/*.rb'
+  end
 
-require 'codecov'
-SimpleCov.formatter = SimpleCov::Formatter::Codecov
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
 
 # For a list of matchers, see:
 # https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -33,6 +35,25 @@ describe Fastlane::Actions::FlutterVersionAction do
           pubspec_location: './example/pubspec.yaml'
         )['version_name']
       ).to match('1.0.6')
+    end
+    it 'omit version code when told so' do
+      result = Fastlane::Actions::FlutterVersionAction.run(
+        pubspec_location: './fixture/no_version_code/pubspec.yaml',
+        should_omit_version_code: true
+      )
+      expect(result['version_name']).to match('1.20.2')
+      expect(result['version_code']).to match('NOT_FOUND')
+    end
+    it 'ommit version code on version coded spec should error out' do
+      expect do
+        Fastlane::Actions::FlutterVersionAction.run(
+          pubspec_location: './example/pubspec.yaml',
+          should_omit_version_code: true
+        )
+      end.to raise_error(
+        RuntimeError,
+        'Version code omitted but verson code indicator (+) found in pubspec.yml'
+      )
     end
     it 'output correct version code' do
       expect(
@@ -95,7 +116,7 @@ describe Fastlane::Actions::FlutterVersionAction do
     it 'list options' do
       expect(
         Fastlane::Actions::FlutterVersionAction.available_options.length
-      ).to eq(1)
+      ).to eq(2)
     end
   end
 end

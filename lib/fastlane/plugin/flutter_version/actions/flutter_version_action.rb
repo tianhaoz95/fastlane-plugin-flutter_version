@@ -10,6 +10,7 @@ module Fastlane
     class FlutterVersionAction < Action
       def self.run(params)
         pubspec_location = params[:pubspec_location]
+        should_omit_version_code = params[:should_omit_version_code]
         begin
           pubspec = YAML.load_file(pubspec_location)
         # rubocop:disable Style/RescueStandardError
@@ -19,9 +20,20 @@ module Fastlane
         # rubocop:enable Style/RescueStandardError
         version = pubspec['version']
         UI.message('The full version is: '.dup.concat(version))
-        raise 'Verson code indicator (+) not found in pubspec.yml' unless version.include?('+')
+        # TODO(tianhaoz95): add an option to suppress for projects that do not need a version code.
+        has_version_code_pattern = version.include?('+')
+        if should_omit_version_code && has_version_code_pattern
+          raise 'Version code omitted but verson code indicator (+) found in pubspec.yml'
+        end
+        if !should_omit_version_code && !has_version_code_pattern
+          raise 'Verson code indicator (+) not found in pubspec.yml'
+        end
 
-        version_sections = version.split('+')
+        version_sections = if should_omit_version_code
+                             [version, 'NOT_FOUND']
+                           else
+                             version.split('+')
+                           end
         version_name = version_sections[0]
         version_code = version_sections[1]
         UI.message('The version name: '.dup.concat(version_name))
@@ -63,6 +75,14 @@ module Fastlane
             optional: true,
             type: String,
             default_value: '../pubspec.yaml'
+          ),
+          FastlaneCore::ConfigItem.new(
+            key: :should_omit_version_code,
+            env_name: 'SHOULD_OMIT_VERSION_CODE',
+            description: 'If the version code should be omitted for projects that do not use a version code',
+            optional: true,
+            type: Boolean,
+            default_value: false
           )
         ]
       end

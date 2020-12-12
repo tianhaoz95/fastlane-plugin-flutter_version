@@ -19,3 +19,6 @@ test-results
 .flutter-plugins-dependencies
 .packages
 pubspec.lock
+
+# VS code config
+.vscode
