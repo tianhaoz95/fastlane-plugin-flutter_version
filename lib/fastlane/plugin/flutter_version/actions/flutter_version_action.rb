@@ -20,7 +20,6 @@ module Fastlane
         # rubocop:enable Style/RescueStandardError
         version = pubspec['version']
         UI.message('The full version is: '.dup.concat(version))
-        # TODO(tianhaoz95): add an option to suppress for projects that do not need a version code.
         has_version_code_pattern = version.include?('+')
         if should_omit_version_code && has_version_code_pattern
           raise 'Version code omitted but verson code indicator (+) found in pubspec.yml'
