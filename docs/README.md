@@ -31,7 +31,19 @@ end
 
 Check out the instructions in [GitHub Registry](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/packages/143774).
 
-### From gem registry
+### From RubyGems registry
+
+Install from the command line:
+
+```bash
+gem install fastlane-plugin-flutter_version
+```
+
+Install via Gemfile:
+
+```bash
+gem 'fastlane-plugin-flutter_version', '~> 1.0', '>= 1.0.1'
+```
 
 Check out the instructions [here](https://rubygems.org/gems/fastlane-plugin-flutter_version).
 
