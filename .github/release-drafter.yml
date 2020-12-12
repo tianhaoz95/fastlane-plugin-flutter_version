@@ -25,9 +25,18 @@ version-resolver:
   minor:
     labels:
       - "minor"
+      - "feature"
+      - "feat"
+      - "enhancement"
   patch:
     labels:
       - "patch"
+      - "fix"
+      - "bugfix"
+      - "bug"
+      - "chore"
+      - "docs"
+      - "documentation"
   default: patch
 template: |
   ## What’s Changed 🔥
