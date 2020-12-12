@@ -118,5 +118,8 @@ describe Fastlane::Actions::FlutterVersionAction do
         Fastlane::Actions::FlutterVersionAction.available_options.length
       ).to eq(2)
     end
+    it 'has valid plugin version format' do
+      expect(Fastlane::FlutterVersion::VERSION).to match(/[0-9]+.[0-9]+.[0-9]+/)
+    end
   end
 end
