@@ -133,16 +133,17 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://www.shunkakinoki.com/"><img src="https://avatars0.githubusercontent.com/u/39187513?v=4" width="100px;" alt=""/><br /><sub><b>Shun Kakinoki</b></sub></a><br /><a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=shunkakinoki" title="Code">💻</a></td>
-    <td align="center"><a href="http://tianhaoz.com"><img src="https://avatars3.githubusercontent.com/u/16887772?v=4" width="100px;" alt=""/><br /><sub><b>Tianhao Zhou</b></sub></a><br /><a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=tianhaoz95" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/davidbrenner"><img src="https://avatars3.githubusercontent.com/u/236870?v=4" width="100px;" alt=""/><br /><sub><b>davidbrenner</b></sub></a><br /><a href="#ideas-davidbrenner" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=davidbrenner" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://lahaus.com"><img src="https://avatars2.githubusercontent.com/u/76348?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Gomez</b></sub></a><br /><a href="#ideas-danielgomezrico" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/RtypeStudios"><img src="https://avatars3.githubusercontent.com/u/990114?v=4" width="100px;" alt=""/><br /><sub><b>RtypeStudios</b></sub></a><br /><a href="#question-RtypeStudios" title="Answering Questions">💬</a></td>
+    <td align="center"><a href="https://www.shunkakinoki.com/"><img src="https://avatars0.githubusercontent.com/u/39187513?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shun Kakinoki</b></sub></a><br /><a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=shunkakinoki" title="Code">💻</a></td>
+    <td align="center"><a href="http://tianhaoz.com"><img src="https://avatars3.githubusercontent.com/u/16887772?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tianhao Zhou</b></sub></a><br /><a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=tianhaoz95" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/davidbrenner"><img src="https://avatars3.githubusercontent.com/u/236870?v=4?s=100" width="100px;" alt=""/><br /><sub><b>davidbrenner</b></sub></a><br /><a href="#ideas-davidbrenner" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=davidbrenner" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://lahaus.com"><img src="https://avatars2.githubusercontent.com/u/76348?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniel Gomez</b></sub></a><br /><a href="#ideas-danielgomezrico" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/RtypeStudios"><img src="https://avatars3.githubusercontent.com/u/990114?v=4?s=100" width="100px;" alt=""/><br /><sub><b>RtypeStudios</b></sub></a><br /><a href="#question-RtypeStudios" title="Answering Questions">💬</a> <a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=RtypeStudios" title="Documentation">📖</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
