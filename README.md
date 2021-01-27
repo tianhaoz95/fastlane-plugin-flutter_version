@@ -1,6 +1,6 @@
 # flutter_version (Fastlane plugin)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-flutter_version)
@@ -138,6 +138,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/davidbrenner"><img src="https://avatars3.githubusercontent.com/u/236870?v=4?s=100" width="100px;" alt=""/><br /><sub><b>davidbrenner</b></sub></a><br /><a href="#ideas-davidbrenner" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=davidbrenner" title="Documentation">📖</a></td>
     <td align="center"><a href="http://lahaus.com"><img src="https://avatars2.githubusercontent.com/u/76348?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniel Gomez</b></sub></a><br /><a href="#ideas-danielgomezrico" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/RtypeStudios"><img src="https://avatars3.githubusercontent.com/u/990114?v=4?s=100" width="100px;" alt=""/><br /><sub><b>RtypeStudios</b></sub></a><br /><a href="#question-RtypeStudios" title="Answering Questions">💬</a> <a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=RtypeStudios" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/M123-dev"><img src="https://avatars.githubusercontent.com/u/39344769?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Marvin M</b></sub></a><br /><a href="#ideas-M123-dev" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
