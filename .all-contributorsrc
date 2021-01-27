@@ -52,6 +52,15 @@
         "question",
         "doc"
       ]
+    },
+    {
+      "login": "M123-dev",
+      "name": "Marvin M",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39344769?v=4",
+      "profile": "https://github.com/M123-dev",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
