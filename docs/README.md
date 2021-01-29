@@ -105,7 +105,7 @@ end
 
 | Name | Description | Optional | Type | Default |
 |:---:|:---:|:---:|:---:|:---:|
-| `pubspec_location` | The location of the `pubspec.yaml` file. | :white_check_mark: | `String` | `../pubspec.yaml` |
+| `pubspec_location` | The location of the `pubspec.yaml` file (relative to `Fastfile`). | :white_check_mark: | `String` | `../pubspec.yaml` |
 | `should_omit_version_code` | If the version code should be omitted for projects that do not use a version code. | :white_check_mark: | `Boolean` | `false` |
 
 ## Issues and feedback
