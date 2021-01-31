@@ -1,4 +1,5 @@
-* [Getting Started](/)
+* [Getting Started](/README)
+* [Available Option Details](/options)
 * [For Developers](/development)
 * [Security](/security)
 * [Code of Conduct](/code)
