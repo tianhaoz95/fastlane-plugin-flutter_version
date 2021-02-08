@@ -1,3 +1,8 @@
 parsers:
   v1:
     include_full_missed_files: true
+# This is a temporary fix due to https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues/67
+# whose solution is proposed in https://community.codecov.io/t/codcov-not-tracks-ignored-files-in-my-ruby-project/2416
+# TODO(@tianhaoz95): remove this when the bug in codecov is fixed.
+ignore:
+  - "spec/"
