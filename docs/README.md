@@ -62,7 +62,7 @@ The following example releases a Android app to Google Play Store without needin
 ```ruby
 desc "submit to internal track in Google Play Store"
 lane :internal do
-  Dir.chdir "../.." { sh("flutter", "build", "appbundle", "--release") } # Call Flutter Build
+  Dir.chdir "../.." do sh("flutter", "build", "appbundle", "--release") end # Call Flutter Build
   gradle(task: 'bundle', build_type: 'Release')
   upload_to_play_store(
     track: 'internal',
@@ -85,7 +85,7 @@ The following example releases an iOS app to TestFlight without needing to manua
 ```ruby
 desc "submit to TestFlight"
 lane :internal do
-  Dir.chdir "../.." { sh("flutter", "build", "ios", "--release", "--no-codesign") } # Call Flutter Build
+  Dir.chdir "../.." do sh("flutter", "build", "appbundle", "--release") end # Call Flutter Build
   # https://docs.fastlane.tools/actions/increment_version_number/
   increment_version_number(
     xcodeproj: "Runner.xcodeproj",
