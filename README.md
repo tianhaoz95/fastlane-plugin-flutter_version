@@ -1,6 +1,6 @@
 # flutter_version (Fastlane plugin)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-flutter_version)
@@ -140,6 +140,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/RtypeStudios"><img src="https://avatars3.githubusercontent.com/u/990114?v=4?s=100" width="100px;" alt=""/><br /><sub><b>RtypeStudios</b></sub></a><br /><a href="#question-RtypeStudios" title="Answering Questions">💬</a> <a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=RtypeStudios" title="Documentation">📖</a> <a href="#tutorial-RtypeStudios" title="Tutorials">✅</a></td>
     <td align="center"><a href="https://github.com/M123-dev"><img src="https://avatars.githubusercontent.com/u/39344769?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Marvin M</b></sub></a><br /><a href="#ideas-M123-dev" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://www.upwork.com/o/profiles/users/~015f2268be670e1246/"><img src="https://avatars.githubusercontent.com/u/8264639?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Muhammad Adil</b></sub></a><br /><a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=ch-muhammad-adil" title="Documentation">📖</a> <a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues?q=author%3Ach-muhammad-adil" title="Bug reports">🐛</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://lesliearkorful.com"><img src="https://avatars.githubusercontent.com/u/4087388?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Leslie Arkorful</b></sub></a><br /><a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues?q=author%3Alesliearkorful" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
