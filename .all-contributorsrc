@@ -72,6 +72,15 @@
         "doc",
         "bug"
       ]
+    },
+    {
+      "login": "lesliearkorful",
+      "name": "Leslie Arkorful",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4087388?v=4",
+      "profile": "https://lesliearkorful.com",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
