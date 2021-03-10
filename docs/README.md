@@ -142,7 +142,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.upwork.com/o/profiles/users/~015f2268be670e1246/"><img src="https://avatars.githubusercontent.com/u/8264639?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Muhammad Adil</b></sub></a><br /><a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=ch-muhammad-adil" title="Documentation">📖</a> <a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues?q=author%3Ach-muhammad-adil" title="Bug reports">🐛</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://lesliearkorful.com"><img src="https://avatars.githubusercontent.com/u/4087388?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Leslie Arkorful</b></sub></a><br /><a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues?q=author%3Alesliearkorful" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://lesliearkorful.com"><img src="https://avatars.githubusercontent.com/u/4087388?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Leslie Arkorful</b></sub></a><br /><a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues?q=author%3Alesliearkorful" title="Bug reports">🐛</a> <a href="https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commits?author=lesliearkorful" title="Documentation">📖</a></td>
   </tr>
 </table>
 
