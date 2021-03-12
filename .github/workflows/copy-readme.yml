@@ -1,0 +1,24 @@
+name: Copy README
+on:
+  push:
+    branches:
+      - "master"
+    paths:
+      - "README.md"
+jobs:
+  automation__dup-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: Monorepo-Actions/setup-gh-cli@main
+        with:
+          token: ${{ secrets.USE_GITHUB_TOKEN }}
+      - uses: Monorepo-Actions/file-dup-action@main
+        with:
+          username: "tianhaoz95"
+          email: "tianhaoz@umich.edu"
+          token: ${{ secrets.USE_GITHUB_TOKEN }}
+          config_files: "configs/file-dup-action.json"
+          method: "pull_request"
+          base: "master"
+          head: "chore/duplicate-documentation"
