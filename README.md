@@ -108,21 +108,21 @@ end
 | `pubspec_location` | The location of the `pubspec.yaml` file (relative to `Fastfile`). For details, see [here](https://tianhaoz.com/fastlane-plugin-flutter_version/#/options?id=flutter-config-file-location). | :white_check_mark: | `String` | `../pubspec.yaml` |
 | `should_omit_version_code` | If the version code should be omitted for projects that do not use a version code. For details, see [here](https://tianhaoz.com/fastlane-plugin-flutter_version/#/options?id=version-code-omission). | :white_check_mark: | `Boolean` | `false` |
 
-## Issues and feedback
-
-For any other issues and feedback about this plugin, please submit it to [this repository](https://github.com/tianhaoz95/fastlane-plugin-flutter_version).
-
-## Troubleshooting
-
-If you have trouble using plugins, check out the [Plugins Troubleshooting](https://docs.fastlane.tools/plugins/plugins-troubleshooting/) guide.
-
-## Using Fastlane plugins
-
-For more information about how the `fastlane` plugin system works, check out the [Plugins documentation](https://docs.fastlane.tools/plugins/create-plugin/).
-
 ## About Fastlane
 
 Fastlane is the easiest way to automate beta deployments and releases for your iOS and Android apps. To learn more, check out [fastlane.tools](https://fastlane.tools).
+
+### Issues and feedback
+
+For any other issues and feedback about this plugin, please submit it to [this repository](https://github.com/tianhaoz95/fastlane-plugin-flutter_version).
+
+### Troubleshooting
+
+If you have trouble using plugins, check out the [Plugins Troubleshooting](https://docs.fastlane.tools/plugins/plugins-troubleshooting/) guide.
+
+### Using Fastlane plugins
+
+For more information about how the `fastlane` plugin system works, check out the [Plugins documentation](https://docs.fastlane.tools/plugins/create-plugin/).
 
 ## Contributors ✨
 
