@@ -5,8 +5,9 @@ on:
       - "master"
     paths:
       - "README.md"
+      - ".github/workflows/copy-readme.yml"
 jobs:
-  automation__dup-docs:
+  copy-readme:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,7 +19,7 @@ jobs:
           username: "tianhaoz95"
           email: "tianhaoz@umich.edu"
           token: ${{ secrets.USE_GITHUB_TOKEN }}
-          config_files: "configs/file-dup-action.json"
+          config_files: "config/file-dup-action.json"
           method: "pull_request"
           base: "master"
           head: "chore/duplicate-documentation"
