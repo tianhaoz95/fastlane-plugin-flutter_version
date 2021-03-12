@@ -19,7 +19,7 @@ jobs:
           username: "tianhaoz95"
           email: "tianhaoz@umich.edu"
           token: ${{ secrets.USE_GITHUB_TOKEN }}
-          config_files: "config/file-dup-action.json"
+          config_files: "config/copy-readme.json"
           method: "pull_request"
           base: "master"
           head: "chore/duplicate-documentation"
