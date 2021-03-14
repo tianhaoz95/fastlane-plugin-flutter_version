@@ -5,3 +5,10 @@ pull_request_rules:
     actions:
       merge:
         method: squash
+  - name: auto merge for README sync
+    conditions:
+      - author~=^tianhaoz95$
+      - title~=^\[README sync\]
+    actions:
+      merge:
+        method: squash
