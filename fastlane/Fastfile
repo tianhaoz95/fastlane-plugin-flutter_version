@@ -28,3 +28,33 @@ lane :test do
     )
   end
 end
+
+lane :test_no_version_code do
+  version_info = flutter_version(
+    pubspec_location: './example/variants/no_version_code.yaml',
+    should_omit_version_code: true
+  )
+  puts version_info
+  # Tests if the version code retrieved from the pubspec.yaml matches
+  version_code = version_info['version_code']
+  correct_version_code = 'NOT_FOUND'
+  if version_code != correct_version_code
+    UI.user_error!(
+      'version_code mismatched, expect '
+        .concat(correct_version_code)
+        .concat(', got ')
+        .concat(version_code)
+    )
+  end
+  # Tests if the version name retrieved from the pubspec.yaml matches
+  version_name = version_info['version_name']
+  expected_version_name = '1.0.6'
+  if version_name != expected_version_name
+    UI.user_error!(
+      'version_name mismatched, expect '
+        .concat(expected_version_name)
+        .concat(', got ')
+        .concat(version_name)
+    )
+  end
+end
