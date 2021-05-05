@@ -19,6 +19,6 @@ jobs:
         run: flutter create regression_test_app
       - name: Set Fastlane config for regression test
         run: |
-          mkdir -p regression_test_app/android/fastlane
-          cp regression/Fastlane regression_test_app/android/fastlane
+          mkdir -p ./regression_test_app/android/fastlane
+          cp ./regression/Fastfile ./regression_test_app/android/fastlane
       
