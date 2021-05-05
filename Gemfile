@@ -1,7 +1,6 @@
 source('https://rubygems.org')
 
 gem 'codecov'
-gem 'rake'
 
 gemspec
 
