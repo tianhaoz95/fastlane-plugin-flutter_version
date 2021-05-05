@@ -21,6 +21,6 @@ jobs:
         run: |
           cp -r ../../regression/fastlane .
           cp ../../regression/Gemfile .
-          bunlde install
+          bundle install
           bundle exec fastlane regression
       
