@@ -1,0 +1,24 @@
+name: Regression Test
+on: push
+jobs:
+  regression-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '12.x'
+      - uses: subosito/flutter-action@v1
+        with:
+          flutter-version: '2.0.6'
+      - run: bundle install
+      - name: Initialize Flutter project
+        run: flutter create regression_test_app
+      - name: Set Fastlane config for regression test
+        run: |
+          mkdir -p regression_test_app/android/fastlane
+          cp regression/Fastlane regression_test_app/android/fastlane
+      
