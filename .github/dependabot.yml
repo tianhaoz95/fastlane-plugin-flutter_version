@@ -1,13 +1,14 @@
 version: 2
 updates:
-- package-ecosystem: bundler
-  directory: "/."
-  schedule:
-    interval: daily
-    time: "01:00"
-    timezone: America/Los_Angeles
-  open-pull-requests-limit: 10
-  reviewers:
-  - tianhaoz95
-  labels:
-  - gem dependency update
+  - package-ecosystem: bundler
+    directory: "/"
+    schedule:
+      interval: daily
+    reviewers:
+      - tianhaoz95
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: daily
+    reviewers:
+      - tianhaoz95
