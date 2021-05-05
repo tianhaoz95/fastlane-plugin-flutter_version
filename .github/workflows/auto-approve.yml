@@ -5,12 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Approve Dependabot updates
-        uses: hmarr/auto-approve-action@v2.0.0
+        uses: hmarr/auto-approve-action@v2.1.0
         if: github.actor == 'dependabot[bot]'
         with:
           github-token: "${{ secrets.USE_GITHUB_TOKEN }}"
       - name: Approve Allcontributors updates
-        uses: hmarr/auto-approve-action@v2.0.0
+        uses: hmarr/auto-approve-action@v2.1.0
         if: github.actor == 'allcontributors[bot]'
         with:
           github-token: "${{ secrets.USE_GITHUB_TOKEN }}"
