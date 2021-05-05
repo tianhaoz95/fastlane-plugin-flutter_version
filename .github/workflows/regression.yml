@@ -21,4 +21,7 @@ jobs:
         run: |
           mkdir -p ./regression_test_app/android/fastlane
           cp ./regression/Fastfile ./regression_test_app/android/fastlane
+      - name: Run regression test
+        working-directory: ./regression_test_app/android
+        run: bundle exec fastlane
       
