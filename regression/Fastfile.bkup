@@ -1,8 +1,0 @@
-default_platform(:android)
-
-platform :android do
-  desc "submit to internal track in Google Play Store"
-  lane :regression do
-    raise "Version name is wrong" unless flutter_version()["version_name"] == "1.0.0"
-  end
-end
