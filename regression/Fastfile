@@ -1,4 +1,4 @@
-lane :test do
+lane :regression do
   version_info = flutter_version(
     pubspec_location: './example/pubspec.yaml'
   )
