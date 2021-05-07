@@ -1,8 +1,11 @@
 name: Regression Test
-on: push
+on: pull_request_target
 jobs:
   regression-test:
     runs-on: ubuntu-latest
+    if: |
+      github.actor == 'dependabot[bot]' || 
+      contains(github.event.pull_request.labels.*.name, 'safe to test')
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
