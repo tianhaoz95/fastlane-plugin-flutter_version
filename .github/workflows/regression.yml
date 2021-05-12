@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-java@v2
         with:
           java-version: '12.x'
-      - uses: subosito/flutter-action@v1
+      - uses: subosito/flutter-action@v1.5.0
         with:
           flutter-version: '2.0.6'
       - name: Initialize Flutter project
