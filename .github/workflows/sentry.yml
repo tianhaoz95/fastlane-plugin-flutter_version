@@ -1,8 +1,13 @@
 name: Sentry
-on: push
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, labeled]
 jobs:
   spec-test:
     runs-on: ubuntu-latest
+    if: |
+      github.actor == 'dependabot[bot]' || 
+      contains(github.event.pull_request.labels.*.name, 'safe to test')
     steps:
       - name: checkout code
         uses: actions/checkout@v2
