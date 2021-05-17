@@ -5,6 +5,9 @@ on:
 jobs:
   auto-approve:
     runs-on: ubuntu-latest
+    if: |
+      github.actor == 'dependabot[bot]' || 
+      contains(github.event.pull_request.labels.*.name, 'safe to test')
     steps:
       - uses: hmarr/auto-approve-action@v2.1.0
         if: github.actor == 'dependabot[bot]'
