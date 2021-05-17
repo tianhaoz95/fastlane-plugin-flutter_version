@@ -1,5 +1,7 @@
 name: "Rubocop"
-on: pull_request_target
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, labeled]
 jobs:
   rubocop:
     runs-on: ubuntu-latest
