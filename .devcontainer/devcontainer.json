@@ -20,7 +20,18 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"rebornix.Ruby"
+		"rebornix.Ruby",
+		"rebornix.ruby",
+		"github.vscode-codeql",
+		"docsmsft.docs-markdown",
+		"donjayamanne.githistory",
+		"ms-vscode.github-issues-prs",
+		"github.vscode-pull-request-github",
+		"eamodio.gitlens",
+		"ms-vsliveshare.vsliveshare-pack",
+		"davidanson.vscode-markdownlint",
+		"visualstudioexptteam.vscodeintellicode",
+		"redhat.vscode-yaml"
 	],
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

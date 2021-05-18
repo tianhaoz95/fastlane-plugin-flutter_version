@@ -1,7 +1,9 @@
-name: "Rubocop"
+name: Code Scan
 on:
   pull_request_target:
     types: [opened, reopened, synchronize, labeled]
+  schedule:
+    - cron: "0 3 * * *"
 jobs:
   rubocop:
     runs-on: ubuntu-latest
