@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.4...v1.1.5) (2021-05-18)
+
+
+### Bug Fixes
+
+* add different doc sync ([11befa3](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/11befa303f0acd758394bb090172ae0a09779b23))
+
 ## [1.1.4](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.3...v1.1.4) (2021-05-18)
 
 
