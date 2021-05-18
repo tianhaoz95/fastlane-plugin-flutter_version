@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.3...v1.1.4) (2021-05-18)
+
+
+### Bug Fixes
+
+* deprecate readme dup action ([194be78](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/194be78f4866dc2d8446a063f8cc4c462261ef2f))
+
 ## [1.1.3](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.2...v1.1.3) (2021-05-18)
 
 
