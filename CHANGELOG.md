@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.2...v1.1.3) (2021-05-18)
+
+
+### Bug Fixes
+
+* move mergify config ([e7dabe6](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/e7dabe647644e054609456f859afb311bd8694e0))
+
 ## [1.1.2](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.1...v1.1.2) (2021-05-18)
 
 
