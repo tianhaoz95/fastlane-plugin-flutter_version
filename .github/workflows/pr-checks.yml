@@ -15,13 +15,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "2.7"
-      - name: install dependencies
-        run: bundle install
-      - name: sanity checks
+          bundler-cache: true
+      - name: run unit tests
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: bundle exec rake
-      - name: run tests
+      - name: run e2e tests
         run: |
           bundle exec fastlane test
           bundle exec fastlane test_no_version_code
@@ -42,8 +41,7 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: "2.0.6"
-      - name: Initialize Flutter project
-        run: flutter create regression_test_app
+      - run: flutter create regression_test_app
       - name: Run regression test
         working-directory: ./regression_test_app/android
         run: |
