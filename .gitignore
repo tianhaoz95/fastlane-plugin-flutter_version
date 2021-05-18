@@ -22,3 +22,6 @@ pubspec.lock
 
 # VS code config
 .vscode
+
+# npm modules
+node_modules

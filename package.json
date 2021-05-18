@@ -1,0 +1,30 @@
+{
+  "name": "fastlane-plugin-flutter_version",
+  "version": "1.1.0",
+  "description": "<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section --> [![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-) <!-- ALL-CONTRIBUTORS-BADGE:END -->",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "example",
+    "lib": "lib"
+  },
+  "scripts": {
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tianhaoz95/fastlane-plugin-flutter_version.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues"
+  },
+  "homepage": "https://github.com/tianhaoz95/fastlane-plugin-flutter_version#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "semantic-release": "^17.4.3",
+    "semantic-release-rubygem": "^1.2.0"
+  }
+}
