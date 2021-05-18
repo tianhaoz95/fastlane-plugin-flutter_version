@@ -2,6 +2,6 @@
 
 module Fastlane
   module FlutterVersion
-    VERSION = '1.1.1'
+    VERSION = '1.1.2'
   end
 end
