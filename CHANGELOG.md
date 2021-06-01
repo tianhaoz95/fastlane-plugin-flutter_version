@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.7...v1.1.8) (2021-06-01)
+
+
+### Bug Fixes
+
+* remove auto approve conditions ([#131](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues/131)) ([49d013d](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/49d013df08dda3c0e74e956d6dc6040d07205c3c))
+
 ## [1.1.7](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.6...v1.1.7) (2021-06-01)
 
 
