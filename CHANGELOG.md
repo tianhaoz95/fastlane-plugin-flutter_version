@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.5...v1.1.6) (2021-06-01)
+
+
+### Bug Fixes
+
+* some maintaining work ([#129](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues/129)) ([b3f8fdc](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/b3f8fdcb0d7569b5d6526d4e9fde74ebcd997925))
+
 ## [1.1.5](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.4...v1.1.5) (2021-05-18)
 
 

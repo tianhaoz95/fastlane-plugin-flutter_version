@@ -1,6 +1,6 @@
 {
   "name": "fastlane-plugin-flutter_version",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "TBH this is only for releasing the package...",
   "main": "index.js",
   "directories": {
