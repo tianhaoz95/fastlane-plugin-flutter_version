@@ -11,7 +11,12 @@
     }
   },
   "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "/bin/bash"
+      }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash"
   },
   "extensions": [
     "rebornix.Ruby",
@@ -30,5 +35,5 @@
   ],
   "postCreateCommand": "ruby --version",
   "remoteUser": "vscode",
-  "postStartCommand": "bundle install"
+  "postStartCommand": "bundle install && npm install"
 }
