@@ -25,3 +25,9 @@ To automatically fix many of the styling issues, use
 ```bash
 bundle exec rake rubocop:auto_correct -a
 ```
+
+## VS code
+
+### Remote container developement
+
+To set git actor automatically every time a new container is built, set `VSCODE_CONTAINER_GIT_EMAIL` and `VSCODE_CONTAINER_GIT_USER` as environment variables, and add them into `~/.bashrc` if needed.
