@@ -4,7 +4,7 @@
 
 This is the location of `pubspec.yaml` to read the version information from relative to the location of `fastlane` directory because that is the `cwd` when `fastlane` executes.
 
-It can be passed into `flutter_version` with the `pubspec_location` argument. 
+It can be passed into `flutter_version` with the `pubspec_location` argument.
 
 Normally, if the `pubspec.yaml` file locates in `[app_root]/pubspec.yaml`, the `fastlane` will be either `[app_root]/android/fastlane` or `[app_root]/ios/fastlane`, so it defaults to `../pubspec.yaml`.
 

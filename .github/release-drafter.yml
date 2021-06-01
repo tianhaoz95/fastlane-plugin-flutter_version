@@ -17,7 +17,7 @@ categories:
       - "docs"
       - "documentation"
 exclude-labels:
-  - 'skip-changelog'
+  - "skip-changelog"
 version-resolver:
   major:
     labels:
@@ -41,9 +41,9 @@ version-resolver:
 template: |
   ## What’s Changed 🔥
   $CHANGES
-  
+
   ## Contributors 👏
   $CONTRIBUTORS
-  
+
   ## Previous versions 🗄️
   $PREVIOUS_TAG

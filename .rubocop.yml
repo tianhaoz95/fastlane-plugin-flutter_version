@@ -2,22 +2,22 @@
 AllCops:
   TargetRubyVersion: 2.6
   Include:
-  - "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb"
-  - "lib/fastlane/plugin/flutter_version/helper/flutter_version_helper.rb"
-  - "lib/fastlane/plugin/flutter_version/version.rb"
-  - "lib/fastlane/plugin/flutter_version.rb"
-  - "spec/flutter_version_action_spec.rb"
-  - "fastlane/Fastfile"
-  - "spec/spec_helper.rb"
-  - "fastlane-plugin-flutter_version.gemspec"
-  - "*/lib/assets/*Template"
-  - "*/lib/assets/*TemplateAndroid"
+    - "lib/fastlane/plugin/flutter_version/actions/flutter_version_action.rb"
+    - "lib/fastlane/plugin/flutter_version/helper/flutter_version_helper.rb"
+    - "lib/fastlane/plugin/flutter_version/version.rb"
+    - "lib/fastlane/plugin/flutter_version.rb"
+    - "spec/flutter_version_action_spec.rb"
+    - "fastlane/Fastfile"
+    - "spec/spec_helper.rb"
+    - "fastlane-plugin-flutter_version.gemspec"
+    - "*/lib/assets/*Template"
+    - "*/lib/assets/*TemplateAndroid"
   Exclude:
-  - "**/lib/assets/custom_action_template.rb"
-  - "./vendor/**/*"
-  - "**/lib/assets/DefaultFastfileTemplate"
-  - "**/lib/assets/MatchfileTemplate"
-  - "**/spec/fixtures/broken_files/broken_file.rb"
+    - "**/lib/assets/custom_action_template.rb"
+    - "./vendor/**/*"
+    - "**/lib/assets/DefaultFastfileTemplate"
+    - "**/lib/assets/MatchfileTemplate"
+    - "**/spec/fixtures/broken_files/broken_file.rb"
 Layout/SpaceAroundMethodCallOperator:
   Enabled: false
 Lint/RaiseException:

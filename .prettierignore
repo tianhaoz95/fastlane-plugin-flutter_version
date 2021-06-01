@@ -1,0 +1,6 @@
+coverage
+test-results
+node_modules
+Gemfile.lock
+CHANGELOG.md
+docs/change.md
