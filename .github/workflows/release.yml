@@ -21,7 +21,6 @@ jobs:
           cp README.md docs/README.md
           cp SECURITY.md docs/security.md
           cp CODE_OF_CONDUCT.md docs/code.md
-          cp CHANGELOG.md docs/change.md
           npm install && npm run release
         env:
           GIT_AUTHOR_NAME: tianhaoz95
