@@ -1,9 +1,9 @@
 {
-    "git.autofetch": true,
-    "git.autofetchPeriod": 60,
-    "git.fetchOnPull": true,
-    "git.pruneOnFetch": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2
+  "git.autofetch": true,
+  "git.autofetchPeriod": 60,
+  "git.fetchOnPull": true,
+  "git.pruneOnFetch": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2
 }
