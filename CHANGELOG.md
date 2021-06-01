@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.8...v1.1.9) (2021-06-01)
+
+
+### Bug Fixes
+
+* add file migration for docs ([#132](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues/132)) ([74e3db8](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/74e3db8338e2e1459c27f78ccaf03b3300c89c45))
+
 ## [1.1.8](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.7...v1.1.8) (2021-06-01)
 
 
