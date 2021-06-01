@@ -1,10 +1,13 @@
 # flutter_version (Fastlane plugin)
+
+<!-- prettier-ignore-start -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- prettier-ignore-end -->
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-flutter_version)
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/tianhaoz95/fastlane-plugin-flutter_version) 
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/tianhaoz95/fastlane-plugin-flutter_version)
 [![codecov](https://codecov.io/gh/tianhaoz95/fastlane-plugin-flutter_version/branch/master/graph/badge.svg)](https://codecov.io/gh/tianhaoz95/fastlane-plugin-flutter_version)
 
 flutter_version is a Fastlane plugin to retrieve version code from Flutter projects which can be used to release changlogs and other metadata to marketplaces.
@@ -103,10 +106,10 @@ end
 
 ### Available options
 
-| Name | Description | Optional | Type | Default |
-|:---:|:---:|:---:|:---:|:---:|
-| `pubspec_location` | The location of the `pubspec.yaml` file (relative to `Fastfile`). For details, see [here](https://tianhaoz.com/fastlane-plugin-flutter_version/#/options?id=flutter-config-file-location). | :white_check_mark: | `String` | `../pubspec.yaml` |
-| `should_omit_version_code` | If the version code should be omitted for projects that do not use a version code. For details, see [here](https://tianhaoz.com/fastlane-plugin-flutter_version/#/options?id=version-code-omission). | :white_check_mark: | `Boolean` | `false` |
+|            Name            |                                                                                             Description                                                                                              |      Optional      |   Type    |      Default      |
+| :------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------: | :-------: | :---------------: |
+|     `pubspec_location`     |      The location of the `pubspec.yaml` file (relative to `Fastfile`). For details, see [here](https://tianhaoz.com/fastlane-plugin-flutter_version/#/options?id=flutter-config-file-location).      | :white_check_mark: | `String`  | `../pubspec.yaml` |
+| `should_omit_version_code` | If the version code should be omitted for projects that do not use a version code. For details, see [here](https://tianhaoz.com/fastlane-plugin-flutter_version/#/options?id=version-code-omission). | :white_check_mark: | `Boolean` |      `false`      |
 
 ## About Fastlane
 

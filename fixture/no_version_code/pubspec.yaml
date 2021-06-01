@@ -19,7 +19,7 @@ dependencies:
   image_picker: ^0.6.3+1
   image_gallery_saver: ^1.2.2
   esys_flutter_share: ^1.0.2
-  image: 
+  image:
   permission_handler: ^4.4.0+hotfix.2
   encrypt: ^4.0.0
   provider: ^4.0.4
