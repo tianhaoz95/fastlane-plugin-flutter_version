@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.6...v1.1.7) (2021-06-01)
+
+
+### Bug Fixes
+
+* remove unused actions and configs ([#130](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues/130)) ([c81d0ec](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/c81d0ec10b35df70ba4a653c574060df3b684724))
+
 ## [1.1.6](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.5...v1.1.6) (2021-06-01)
 
 
