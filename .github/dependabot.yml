@@ -6,6 +6,12 @@ updates:
       interval: daily
     reviewers:
       - tianhaoz95
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+    reviewers:
+      - tianhaoz95
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
