@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.10...v1.1.11) (2021-06-02)
+
+
+### Bug Fixes
+
+* domain has expired ([#134](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues/134)) ([ec78869](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/ec78869f219436463f3752a4005fdd8435d886f7))
+
 ## [1.1.10](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.9...v1.1.10) (2021-06-02)
 
 
