@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.9...v1.1.10) (2021-06-02)
+
+
+### Bug Fixes
+
+* add auto update for npm ([#133](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues/133)) ([84e7b99](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/84e7b99f27ea6af01312996f21609cbb9da6c7bf))
+
 ## [1.1.9](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.8...v1.1.9) (2021-06-01)
 
 
