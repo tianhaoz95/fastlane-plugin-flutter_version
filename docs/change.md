@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.11...v1.1.12) (2021-06-07)
+
+
+### Bug Fixes
+
+* run release only for supported tags ([3ec258d](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/3ec258d072c7c5ffae003ec4fd8ad76b374dc0d7))
+
 ## [1.1.11](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.10...v1.1.11) (2021-06-02)
 
 
