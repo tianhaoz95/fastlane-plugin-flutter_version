@@ -6,6 +6,18 @@ on:
 jobs:
   release-to-registries:
     runs-on: ubuntu-latest
+    # The release workflow should only be triggered by conventional
+    # tags. For details, see the Angular contributing documentation at:
+    # https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format
+    if: |
+      startsWith(github.event.head_commit.message, 'build')
+        || startsWith(github.event.head_commit.message, 'ci')
+        || startsWith(github.event.head_commit.message, 'docs')
+        || startsWith(github.event.head_commit.message, 'feat')
+        || startsWith(github.event.head_commit.message, 'fix')
+        || startsWith(github.event.head_commit.message, 'perf')
+        || startsWith(github.event.head_commit.message, 'refactor')
+        || startsWith(github.event.head_commit.message, 'test')
     steps:
       - uses: actions/checkout@v2.3.4
         with:
