@@ -12,7 +12,7 @@ jobs:
       contains(github.event.pull_request.labels.*.name, 'safe to test')
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
