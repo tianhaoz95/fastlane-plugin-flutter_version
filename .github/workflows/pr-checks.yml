@@ -17,8 +17,8 @@ jobs:
           ruby-version: "3.0"
           bundler-cache: true
       - name: run unit tests
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        # env:
+        #   CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: bundle exec rake
       - name: run e2e tests
         run: |
