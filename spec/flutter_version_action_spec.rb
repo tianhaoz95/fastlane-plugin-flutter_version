@@ -2,9 +2,7 @@
 
 if ENV['CI'] == 'true'
   require 'simplecov'
-  SimpleCov.start do
-    add_filter '/spec/'
-  end
+  SimpleCov.start
 
   require 'codecov'
   SimpleCov.formatter = SimpleCov::Formatter::Codecov
