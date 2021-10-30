@@ -1,1 +1,0 @@
-SimpleCov.pass_ci_if_error = true
