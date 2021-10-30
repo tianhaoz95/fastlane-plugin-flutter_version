@@ -1,6 +1,6 @@
 source('https://rubygems.org')
 
-gem 'codecov'
+gem 'codecov', :require => false, :group => :test
 
 gemspec
 

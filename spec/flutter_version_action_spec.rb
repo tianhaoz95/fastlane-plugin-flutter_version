@@ -3,7 +3,7 @@
 if ENV['CI'] == 'true'
   require 'simplecov'
   SimpleCov.start do
-    track_files 'lib/**/*.rb'
+    add_filter 'lib/**/*.rb'
   end
 
   require 'codecov'
