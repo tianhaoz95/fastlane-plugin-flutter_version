@@ -1,3 +1,11 @@
+## [1.1.13](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.12...v1.1.13) (2021-11-05)
+
+
+### Bug Fixes
+
+* rename test workflow ([71d1b67](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/71d1b671727db4d209a1634c76534bd97aff1a6a))
+* split tests and approval ([e1f4f4c](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/e1f4f4c6c2251afe6d2802c0f1f2ce65bb67421e))
+
 ## [1.1.12](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.11...v1.1.12) (2021-06-07)
 
 
