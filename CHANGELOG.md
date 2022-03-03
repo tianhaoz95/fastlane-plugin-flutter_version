@@ -1,3 +1,12 @@
+## [1.1.14](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.13...v1.1.14) (2022-03-03)
+
+
+### Bug Fixes
+
+* standardize token usage ([#166](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues/166)) ([e85ef45](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/e85ef4561fc1ce24f7c157fa6aac864200d4a01c))
+* tokens and triggers ([#167](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues/167)) ([eda6b1e](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/eda6b1e38c86d510ed635351f2c46c12e59885d4))
+* use native token for auth ([#165](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues/165)) ([78092d7](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/78092d7b18eee5731385cd0f11c4e7bf68abc811))
+
 ## [1.1.13](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.12...v1.1.13) (2021-11-05)
 
 
