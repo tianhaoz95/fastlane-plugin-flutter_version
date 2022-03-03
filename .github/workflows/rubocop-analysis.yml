@@ -1,6 +1,6 @@
 name: Code Scan
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, reopened, synchronize, labeled]
   schedule:
     - cron: "0 3 * * *"
