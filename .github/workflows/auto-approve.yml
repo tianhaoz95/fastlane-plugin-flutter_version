@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: hmarr/auto-approve-action@v2.1.0
-        if: github.actor == 'dependabot[bot]' || github.actor == 'allcontributors[bot]'
+        if: |
+          github.actor == 'dependabot[bot]' || 
+          github.actor == 'allcontributors[bot]' ||
+          github.actor == 'tianhaoz95'
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
