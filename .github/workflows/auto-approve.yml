@@ -1,7 +1,5 @@
 name: Auto Approve
-on:
-  pull_request:
-    types: [opened, reopened, synchronize, labeled]
+on: pull_request_target
 jobs:
   auto-approve:
     runs-on: ubuntu-latest
@@ -9,7 +7,6 @@ jobs:
       - uses: hmarr/auto-approve-action@v2.1.0
         if: |
           github.actor == 'dependabot[bot]' || 
-          github.actor == 'allcontributors[bot]' ||
-          github.actor == 'tianhaoz95'
+            contains(github.event.pull_request.labels.*.name, 'safe to approve')
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
