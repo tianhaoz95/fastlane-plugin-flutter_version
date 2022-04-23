@@ -1,3 +1,10 @@
+## [1.1.15](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.14...v1.1.15) (2022-04-23)
+
+
+### Bug Fixes
+
+* use pull target which has write permission ([#175](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/issues/175)) ([42769d7](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/commit/42769d7b8e12b38475e776b25ce6906ff4b7251a))
+
 ## [1.1.14](https://github.com/tianhaoz95/fastlane-plugin-flutter_version/compare/v1.1.13...v1.1.14) (2022-03-03)
 
 
