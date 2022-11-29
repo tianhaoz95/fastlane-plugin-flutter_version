@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/tianhaoz95/fastlane-plugin-flutter_version#readme",
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
     "prettier": "^2.8.0",
     "semantic-release": "^19.0.5",
