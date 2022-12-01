@@ -22,10 +22,10 @@ module Fastlane
         UI.message('The full version is: '.dup.concat(version))
         has_version_code_pattern = version.include?('+')
         if should_omit_version_code && has_version_code_pattern
-          raise 'Version code omitted but verson code indicator (+) found in pubspec.yml'
+          raise 'Version code omitted but version code indicator (+) found in pubspec.yaml'
         end
         if !should_omit_version_code && !has_version_code_pattern
-          raise 'Verson code indicator (+) not found in pubspec.yml'
+          raise 'Version code indicator (+) not found in pubspec.yaml'
         end
 
         version_sections = if should_omit_version_code
@@ -59,7 +59,7 @@ module Fastlane
       end
 
       def self.details
-        "The plugin reads and parses pubspec.yml of a Flutter
+        "The plugin reads and parses pubspec.yaml of a Flutter
         project and composes the versioning information into
         structured data to be consumed by various releasing
         automations."
@@ -70,7 +70,7 @@ module Fastlane
           FastlaneCore::ConfigItem.new(
             key: :pubspec_location,
             env_name: 'PUBSPEC_LOCATION',
-            description: 'The location of pubspec.yml',
+            description: 'The location of pubspec.yaml',
             optional: true,
             type: String,
             default_value: '../pubspec.yaml'
