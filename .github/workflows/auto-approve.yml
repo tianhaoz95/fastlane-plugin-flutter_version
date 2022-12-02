@@ -9,4 +9,4 @@ jobs:
           github.actor == 'dependabot[bot]' || 
             contains(github.event.pull_request.labels.*.name, 'safe to approve')
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: "${{ secrets.TOKEN }}"
