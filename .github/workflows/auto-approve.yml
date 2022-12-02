@@ -1,4 +1,4 @@
-name: Auto Approve
+name: Auto approve
 on: pull_request_target
 jobs:
   auto-approve:
@@ -9,4 +9,4 @@ jobs:
           github.actor == 'dependabot[bot]' || 
             contains(github.event.pull_request.labels.*.name, 'safe to approve')
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: "${{ secrets.TOKEN }}"
