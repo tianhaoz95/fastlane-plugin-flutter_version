@@ -26,7 +26,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.7",
     "semantic-release": "^20.1.1",
     "semantic-release-rubygem": "^1.2.0"
   }
